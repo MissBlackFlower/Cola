@@ -1,0 +1,50 @@
+.header
+  width: 100%
+  height: 100px
+  overflow: hidden
+  position: relative
+  &__logo
+    float: left
+    width: 20%
+    min-width: 80px
+    padding-top: 23px
+    img
+      max-width: 240px
+      max-height: 77px
+  &__menu
+    float: left
+    width: 80%
+    padding-top: 50px
+    li
+      display: inline-block
+      padding-right: 90px
+    a
+      +S3
+      font-size: 18px
+      line-height: 1
+      color: $black
+      text-transform: uppercase
+      &:hover
+        color: $red
+        text-decoration: underline
+  &__btns
+    width: 92px
+    position: absolute
+    top: 32px
+    right: 0
+  &__user,
+  &__busket
+    width: 50%
+    height: 36px
+    float: left
+    border: 1px solid $red
+    background-color: transparent
+    color: $black
+    text-align: center
+    i
+      font-size: 24px
+      vertical-align: middle
+    &:hover
+      color: $red
+  &__busket
+    margin-left: -1px

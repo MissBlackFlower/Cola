@@ -1,7 +1,7 @@
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever
-// 			+s(codedby) 
+// 			+s(codedby)
 // ## gradient example
 //     	+g(#232323, #5c5c5c);
 //	   horizontal
@@ -27,10 +27,44 @@
 // and create mixin
 // =book
 // 	font-family: "book", Arial, sans-serif
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500|Source+Sans+Pro:400,300|Open+Sans:600)
 
-body
-	font-family: Arial, sans-serif
-	font-size: 12px
-	line-height: 1.4
-	
+// mixins
+=R3
+	font-family: "Roboto", Arial, sans-serif
+	font-weight: 300
+=R4
+	font-family: "Roboto", Arial, sans-serif
+	font-weight: 400
+=R5
+	font-family: "Roboto", Arial, sans-serif
+	font-weight: 500
+=S3
+	font-family: "Source Sans Pro", sans-serif
+	font-weight: 300
+=S4
+	font-family: "Source Sans Pro", sans-serif
+	font-weight: 400
+=Os6
+	font-family: "Open Sans", sans-serif
+	font-weight: 600
+
+// colors
+$red: #e41e2b
+$black: #000
+$white: #fff
+$grey: #e9e9e9
+
 // common blocks
+body
+	+S4
+	font-size: 14px
+	line-height: 1
+a
+	text-decoration: none
+
+.out
+	max-width: 1200px
+	margin: auto
+.carusel
+	z-index: 10

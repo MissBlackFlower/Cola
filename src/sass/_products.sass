@@ -1,0 +1,73 @@
+.products
+  width: 100%
+  overflow: hidden
+  position: relative
+  text-align: center
+  &__title
+    width: 100%
+    padding-bottom: 50px
+    +R5
+    font-size: 30px
+    letter-spacing: 3px
+    line-height: 1.6
+  &__types
+    overflow: inherit
+    padding-left: 3px
+    li
+      float: left
+      width: 25%
+      height: 50px
+      border: 1px solid $black
+      margin-right: -1px
+    .is-active
+      background-color: $grey
+    a
+      display: inline-block
+      line-height: 48px
+      width: 100%
+      +S3
+      font-size: 18px
+      color: $black
+      &:hover
+        background-color: $grey
+  &__conteiner
+    width: 100%
+    position: relative
+    padding: 40px
+  &__item
+    width: 25%
+    height: 410px
+  &__img
+    max-width: 100%
+    max-height: 410px
+    margin-bottom: 30px
+  &__name
+    +R4
+    font-size: 18px
+    line-height: 1.333
+    color: $black
+  &__price
+    display: inline-block
+    width: 100%
+    padding: 15px 0
+    +Os6
+    font-size: 24px
+    color: $red
+  &__prev,
+  &__next
+    @extend .slick-prev
+    margin-top: 0
+    z-index: 3000
+    left: 0
+    &:before
+      content: ''
+      font-size: 50px
+      cursor: pointer
+      background-color: transparent
+      +s(left)
+  &__next
+    @extend .slick-next
+    left: auto
+    right: 0
+    &:before
+      +s(right)
