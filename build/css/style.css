@@ -150,10 +150,11 @@ a { text-decoration: none; }
 .headline__btn { bottom: 60px; }
 .headline__prev, .headline__next { margin-top: 0; }
 
-.style, .orders { width: 100%; height: 326px; text-align: center; margin-bottom: 50px; }
+.style, .orders { width: 100%; height: 326px; overflow: hidden; text-align: center; margin-bottom: 50px; }
 
 .orders { background-image: url(../img/orders.png); }
 
+.style__slides { width: 100%; }
 .style__slide { width: 100%; height: 326px; background-size: cover; }
 
 .photo { width: 100%; height: 546px; overflow: hidden; margin: 65px 0; }
