@@ -46,7 +46,7 @@ $(document).ready(function() {
 	});
 
 // слайдер для products
-	$('.products__conteiner').slick({
+	$('.products__container').slick({
   dots: false,
   infinite: true,
 	// autoplay: true,
@@ -54,6 +54,26 @@ $(document).ready(function() {
   slidesToShow: 4,
 	prevArrow: '.products__prev',
   nextArrow: '.products__next',
+	responsive: [
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+		{
+      breakpoint: 430,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
 	});
 
 // слайд-шоу блоков с разными background
@@ -66,5 +86,10 @@ $(document).ready(function() {
   slidesToShow: 1,
   fade: true,
   cssEase: 'linear'
+	});
+
+	$('.js-btn-nav').on('click', function(){
+		var menu = $('.header__menu');
+		menu.toggleClass('open-menu')
 	});
 });

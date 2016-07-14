@@ -108,9 +108,12 @@
   overflow: hidden
   position: relative
   text-align: center
-  img
+  &__img
     width: 100%
-    vertical-align: middle
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: $black
   &__prev,
   &__next
     @extend .slick-prev
@@ -132,14 +135,18 @@
       content: ''
       +s(arr-right)
 .decor
-  max-height: 500px
+  height: 500px
+  &__img
+    height: 500px
   &__title
     top: 190px
   &__btn
     bottom: 55px
 
 .headline
-  max-height: 473px
+  height: 473px
+  &__img
+    height: 473px
   &__title
     top: 152px
     line-height: 1.5
@@ -163,7 +170,10 @@
   &__slide
     width: 100%
     height: 326px
+    background-position: center
     background-size: cover
+    background-repeat: no-repeat
+    background-color: $black
 .photo
   width: 100%
   height: 546px
@@ -174,7 +184,7 @@
     height: inherit
     float: left
     position: relative
-    background: url(../img/photo/main-photo.png) center/cover $black no-repeat
+    background: url(../img/photo/main-photo.png) center/cover no-repeat
     text-align: center
   &__title
     font-size: 36px
@@ -183,7 +193,14 @@
   &__btn
     bottom: 180px
   &__col-right
-    width: 55%
+    width: 54%
     height: inherit
     float: right
     background: url(../img/photo/photos.png) right/contain no-repeat
+  // &__left
+  //   margin-right: 4.5%
+  // &__row-top
+  //   margin-bottom: 22px
+  //   max-height: 302px
+  // &__row-bottom
+  //   max-height: 222px

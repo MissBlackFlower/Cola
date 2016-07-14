@@ -1,0 +1,61 @@
+// adaptive
+.headline,
+.decor,
+.style,
+.orders,
+.photo
+  +r(880)
+    &__title
+      font-size: 42px
+  +r(720)
+    &__title
+      font-size: 30px
+  +r(580)
+    &__title
+      font-size: 26px
+.headline,
+.decor
+  +r(1150)
+    &__title
+      top: 122px
+      line-height: 1
+    &__btn
+      bottom: 30px
+  +r(720)
+    &__prev,
+    &__next
+      left: 10px
+    &__next
+      left: auto
+      right: 10px
+.decor
+  +r(720)
+    &__title
+      top: 32px
+    &__btn
+      bottom: 30px
+.custom
+  +r(820)
+    margin-top: 10px
+    &__left-col
+      width: 100%
+      padding-right: 0
+    &__right-col
+      width: 100%
+      padding: 0 20px 30px 20px
+      margin-top: -30px
+  +r(480)
+    &__title
+      letter-spacing: 0
+    &__subtitle
+      line-height: 1.5
+.style,
+.orders
+  +r(720)
+    margin-bottom: 15px
+.photo
+  +r(1100)
+    margin: 20px 0
+    &__col-left,
+    &__col-right
+      width: 100%

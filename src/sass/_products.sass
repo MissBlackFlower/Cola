@@ -30,18 +30,20 @@
       color: $black
       &:hover
         background-color: $grey
-  &__conteiner
+  &__container
     width: 100%
     position: relative
     padding: 40px
   &__item
     width: 25%
-    height: 410px
+    max-height: 410px
+    overflow: hidden
   &__img
     max-width: 100%
     max-height: 410px
     margin-bottom: 30px
   &__name
+    padding: 0 15px
     +R4
     font-size: 18px
     line-height: 1.333
@@ -71,3 +73,26 @@
     right: 0
     &:before
       +s(right)
+
+  // adaptive
+  
+  +r(960)
+    &__container
+      padding: 10px 40px
+  +r(720)
+    &__title
+      padding-bottom: 20px
+    &__types
+      li
+        width: 100%
+        margin-right: 0
+        margin-top: -1px
+        &:first-child
+          margin-top: 0
+    &__prev,
+    &__next
+      margin-top: 60px
+  +r(480)
+    &__title
+      letter-spacing: 0
+      padding: 20px 0

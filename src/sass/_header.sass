@@ -48,3 +48,50 @@
       color: $red
   &__busket
     margin-left: -1px
+  &__btn-nav
+    display: none
+    width: 45px
+    height: 36px
+    background-color: rgba(255, 255, 255, 0.3)
+    color: $black
+    border: 1px solid $red
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 5000
+    &::before
+      content: ('\2630')
+      font-size: 24px
+      vertical-align: middle
+
+  // adaptive
+  +r(840)
+    &__btn-nav
+      display: block
+      top: 32px
+      transition: 0.2s all
+      &:hover
+        background-color: rgba(255, 255, 255, 1)
+    &__btns
+      right: 43px
+    &__menu
+      display: none
+      width: 100%
+      li
+        text-align: center
+        width: 100%
+        padding-right: 0
+      a
+        display: inline-block
+        padding: 10px 30px
+        border: 1px solid transparent
+        margin-bottom: 10px
+        &:hover
+          border: 1px solid $red
+    .open-menu
+      display: block
+      position: fixed
+      background-color: $white
+      top: 0
+      left: 0
+      z-index: 4999
