@@ -92,7 +92,7 @@ a { text-decoration: none; }
 .header__menu a { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 18px; line-height: 1; color: #000; text-transform: uppercase; }
 .header__menu a:hover { color: #e41e2b; text-decoration: underline; }
 .header__btns { width: 92px; position: absolute; top: 32px; right: 0; }
-.header__user, .header__busket { width: 50%; height: 36px; float: left; border: 1px solid #e41e2b; background-color: transparent; color: #000; text-align: center; }
+.header__user, .header__busket { width: 50%; height: 36px; float: left; border: 1px solid #e41e2b; background-color: transparent; color: #000; text-align: center; -webkit-transition: 0.2s all; transition: 0.2s all; }
 .header__user i, .header__busket i { font-size: 24px; vertical-align: middle; }
 .header__user:hover, .header__busket:hover { color: #e41e2b; }
 .header__busket { margin-left: -1px; }
@@ -191,7 +191,7 @@ a { text-decoration: none; }
  .headline__title, .decor__title, .style__title, .orders__title, .photo__title{ font-size: 42px; } }
 @media only screen and (max-width: 840px){
  .header__btn-nav{ display: block; top: 32px; -webkit-transition: 0.2s all; transition: 0.2s all; }
- .header__btn-nav:hover{ background-color: white; }
+ .header__btn-nav:hover{ background-color: white; color: #e41e2b; }
  .header__btns{ right: 43px; }
  .header__menu{ display: none; width: 100%; }
  .header__menu li{ text-align: center; width: 100%; padding-right: 0; }
